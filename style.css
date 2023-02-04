@@ -61,7 +61,7 @@ figcaption, label, input, small {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -70,9 +70,7 @@ h1 {
     font-weight: bold;
     padding: 10px;
 }
-/* main{
-    padding: 0 30px;
-} */
+
 main p, #galleryContainer p  {
     padding: 10px;
 }
@@ -87,7 +85,7 @@ h2 {
 
 
 p {
-    font-size: 1.2em;
+    font-size: 1.25em;
     line-height: 1.2;
     letter-spacing: .3px;
 }
@@ -102,7 +100,7 @@ p {
 }
 
 nav a {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -186,11 +184,11 @@ div:empty{
 form{
     display: flex;
     flex-direction: column;
-    width: 70%;
-   
+    width: 86%;
     justify-content: center;
     margin: 0 auto;
 }
+
 form p{
     color: #fff;
 }
@@ -239,23 +237,6 @@ text-transform: uppercase;
 #contact p{
     text-align: center;
     margin-bottom: 20px;
-}
-#contract a{
-    text-decoration: none;
-}
-#top a{
-    color: #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-#top{
-    padding: 15px 10px;
-    border: 1px solid #fff;
-    background-color: #000; 
-    position: relative;
-    bottom: 0;
-    left: 418px; 
 }
 
 footer{
