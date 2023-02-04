@@ -47,6 +47,7 @@ table {
 }
 /* End of reset */
 
+
 :root{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -56,7 +57,7 @@ body{
 }
 
 figcaption, label, input, small {
-    font-size: 1em;
+    font-size: .90em;
 }
 
 h1 {
@@ -66,6 +67,7 @@ h1 {
     font-weight: 600;
     color: #007d7b;
     background-color: #fff;
+    font-weight: bold;
     padding: 10px;
 }
 /* main{
@@ -79,6 +81,8 @@ h2 {
     font-size: 2em;
     margin: 10px 0;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -91,18 +95,18 @@ p {
 #wrapper{
     display: grid; 
     grid-template-columns: 1fr;
-   
     margin: 0 auto;
-    width: 485px; 
+    width: 485px;
     background-color: #fff;
-    
+    /* padding: 0 20px; */
 }
+
 nav a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     color: #fff;
-    
-    
+    text-transform: uppercase;
+     
 }
 
 nav ul{
@@ -137,7 +141,7 @@ li:nth-child(2){
     
     justify-items: center;
     align-items: center;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 
@@ -152,6 +156,7 @@ figcaption{
     text-transform: uppercase;
     position: relative;
     top: -30px;
+    font-weight: bold;
 }
 
 .topCaption{
@@ -192,15 +197,27 @@ form p{
 
 [for="name"], [for="email"], [for="message"]{
     color: #fff;
-    margin: 10px 0;
+    margin: 10px 0 10px 10px;
+    text-transform: uppercase;
     
 }
 
-button{
+[type="text"], [type="email"],[type="text"]{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+}
+::placeholder{
+    color:#007d7b;
+    font-weight: bold;
+    padding: 10px 6px;
+}
+
+#submit{
 background-color: #007d7b;
 color: #fff;
 border: none;
-border-radius: 5px;
+border-radius: 15px;
 width: 60%;
 margin: 20px auto;
 padding: 10px;
@@ -208,16 +225,7 @@ cursor: pointer;
 text-transform: uppercase;
 }
 
-footer{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 20px 0;
-    
-    background-color: #000;
-   
-}
-  
+
 
 #contact{
     background-color: #000;
@@ -225,10 +233,41 @@ footer{
 #contact h2{
     color: #fff;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
+#contact p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contract a{
+    text-decoration: none;
+}
+#top a{
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#top{
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    background-color: #000; 
+    position: relative;
+    bottom: 0;
+    left: 418px; 
+}
 
-@media screen and (min-width:486px) {
+footer{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0 30px;
+    background-color: #000; 
+}
+  
+
+@media screen and (min-width:880px) {
     h1 {
         text-align: left;
     }
@@ -298,7 +337,7 @@ footer{
  
 
    
-}
+} 
 
 @media screen and (min-width:1300px) {
     nav ul{
@@ -310,9 +349,7 @@ footer{
    }
 
     #imgGallery{
-        
         grid-template-columns: repeat(3, 1fr);
-
     }
     
     div:empty{
@@ -368,4 +405,4 @@ footer{
         grid-row: 4/5;
     } 
     
-}
+} 
