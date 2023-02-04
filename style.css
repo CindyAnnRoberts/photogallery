@@ -96,7 +96,6 @@ p {
     margin: 0 auto;
     width: 485px;
     background-color: #fff;
-    /* padding: 0 20px; */
 }
 
 nav a {
@@ -113,7 +112,6 @@ nav ul{
     align-items: center;
     padding: 20px 0;
     background-color: #000;
-
 }
 
 
@@ -126,20 +124,23 @@ li:nth-child(2){
 }
 
 
-
 #galleryContainer{
-    background-color:#fff;
-    padding: 10px 0;
-    
+    padding: 10px 0; 
 }
+
 #imgGallery{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    
-    justify-items: center;
-    align-items: center;
-    /* height: fit-content; */
+    /* justify-items: center;
+    align-items: center;  */
+}
+
+img{
+    max-width: 100%;
+    vertical-align: baseline;
+    object-fit: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.22);
 }
 
 
@@ -147,9 +148,11 @@ figure{
     color:#fff;
     text-align: center;
 }
+
 .blackText{
     color: #000;
 }
+
 figcaption{
     text-transform: uppercase;
     position: relative;
@@ -168,11 +171,6 @@ figcaption{
     top: -610px;
 }
 
-img{
-    max-width: 100%;
-    vertical-align: bottom;
-    object-fit: cover;
-}
 
 div:empty{
     background-color:transparent;
@@ -215,7 +213,7 @@ form p{
 background-color: #007d7b;
 color: #fff;
 border: none;
-border-radius: 15px;
+border-radius: 11px;
 width: 60%;
 margin: 20px auto;
 padding: 10px;
@@ -315,6 +313,9 @@ footer{
         grid-column: 2/-1;
         grid-row: 7/8;
     } 
+    form{
+        width: 80%;
+    }
  
 
    
@@ -385,5 +386,5 @@ footer{
         grid-column: 3/4;
         grid-row: 4/5;
     } 
-    
+   
 } 
