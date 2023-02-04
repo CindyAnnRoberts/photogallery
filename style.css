@@ -57,64 +57,92 @@ body{
 
 figcaption, label, input, small {
     font-size: 1em;
-    --teal: #007d7b;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #007d7b;
+    background-color: #fff;
+    padding: 10px;
+}
+/* main{
+    padding: 0 30px;
+} */
+main p, #galleryContainer p  {
+    padding: 10px;
 }
 
 h2 {
     font-size: 2em;
+    margin: 10px 0;
+    text-align: center;
 }
 
+
 p {
-    font-size: 1.25em;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: .3px;
 }
 
 #wrapper{
     display: grid; 
     grid-template-columns: 1fr;
-    margin: 0 auto;
-    width: 485px;
    
+    margin: 0 auto;
+    width: 485px; 
+    background-color: #fff;
+    
 }
 nav a {
     font-size: 1.5em;
     text-decoration: none;
+    color: #fff;
+    
+    
 }
 
 nav ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #000;
+
 }
+
 
 li{
     list-style-type: none
 }
 
-header{
+li:nth-child(2){
+    margin: 0 50px;
+}
+
+
+
+#galleryContainer{
+    background-color:#fff;
+    padding: 10px 0;
     
-    background-color: lightgreen;
-}
-main{
-   
-    background-color: lightgray;
-}
-#gallery{
-    background-color: lightpink;
 }
 #imgGallery{
     display: grid;
     grid-template-columns: 1fr;
+    gap: 5px;
     
     justify-items: center;
     align-items: center;
     height: fit-content;
-
 }
+
+
 figure{
     color:#fff;
-    margin-bottom: 10px;
     text-align: center;
 }
 .blackText{
@@ -138,34 +166,79 @@ figcaption{
 }
 
 img{
-    max-width: 100vw;
+    max-width: 100%;
     vertical-align: bottom;
     object-fit: cover;
 }
 
 div:empty{
-    background-color:orange;
+    background-color:transparent;
     width: 420px;
     height: 298px;
     display: none;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   
+    justify-content: center;
+    margin: 0 auto;
+}
+form p{
+    color: #fff;
+}
+
+[for="name"], [for="email"], [for="message"]{
+    color: #fff;
+    margin: 10px 0;
+    
+}
+
+button{
+background-color: #007d7b;
+color: #fff;
+border: none;
+border-radius: 5px;
+width: 60%;
+margin: 20px auto;
+padding: 10px;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+    
+    background-color: #000;
+   
+}
+  
 
 #contact{
-    background-color: lightblue;
+    background-color: #000;
 }
-footer{
-    
-    background-color: pink;
+#contact h2{
+    color: #fff;
+    padding: 10px 0;
 }
+
+
 @media screen and (min-width:486px) {
+    h1 {
+        text-align: left;
+    }
     #wrapper{
         width: 880px;
     }
     #imgGallery{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 100vw;
+       
     }
     
     
@@ -227,13 +300,17 @@ footer{
    
 }
 
-@media screen and (min-width:881px) {
-    #wrapper{
-        width: 1300px; 
+@media screen and (min-width:1300px) {
+    nav ul{
+        justify-content: right;
     }
+   
+   #wrapper{
+    width: 1300px;
+   }
 
     #imgGallery{
-        max-width: 100vw;
+        
         grid-template-columns: repeat(3, 1fr);
 
     }
